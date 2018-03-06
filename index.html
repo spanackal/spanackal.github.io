@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>My Portfolio Project</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
+   </head>
+   <body>
+      <header>
+         <section class="header-section">
+            <img class="udacity-logo" src="img/udacity-logo.png" alt="Udacity Logo">
+            <div class="header-text">
+               <h1 class="header-name">Sanju Thomas Panackal</h1>
+               <h3 class="header-description">FRONT-END NINJA</h3>
+            </div>
+         </section>
+         <a class="header-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+               <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+         </a>
+      </header>
+      <nav class="nav">
+         <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/sanjuthomaspanackal/">CV</a></li>
+            <li class="nav-item"><a href="#featured-work-heading">Projects</a></li>
+            <li class="nav-item"><a href="#about-heading">About Me</a></li>
+         </ul>
+      </nav>
+      <main>
+         <picture>
+            <source
+               media="(min-width: 1000px)"
+               srcset="img/main-image-large-1x.jpg 1x, img/main-image-large-2x.jpg 2x">
+            <source
+               media="(min-width: 550px)"
+               srcset="img/main-image-medium-1x.jpg 1x, img/main-image-medium-2x.jpg 2x">
+            <img class ="main-image" src="img/main-image-small.jpg" alt="My personal office">
+         </picture>
+         <article>
+            <h2 id="about-heading">About Me</h2>
+            <picture>
+               <source
+                  media="(min-width: 550px)"
+                  srcset="img/selfie-medium-1x.jpg 1x, img/selfie-medium-2x.jpg 2x">
+               <img class ="selfie-image" src="img/selfie-small.jpg" alt="My Selfie!!!">
+            </picture>
+            <p class="about-me">
+               Hi, my name is Sanju Thomas Panackal. I am a Quality Engineer by profession.
+               The curious side in me wanted to explore front-end development and thats why i ended up creating this website.
+               I hope to build up on this skill and create funky websites in the future.
+               In my spare time , I generally enjoy listening to music or watching sci-fi movies.
+            </p>
+         </article>
+         <h2 id="featured-work-heading">Featured Work</h2>
+         <div class="project-content">
+            <div class="appify">
+               <figure>
+                  <picture>
+                     <source
+                        media="(min-width: 550px)"
+                        srcset="img/appify-small-1x.jpg 1x, img/appify-small-2x.jpg 2x">
+                     <img class ="appify-image" src="img/appify-medium.jpg" alt="Placeholder for Appify">
+                  </picture>
+                  <figcaption class="caption">APPIFY</figcaption>
+                  <a class="zocial-github" href="https://github.com/udacity">Source Code</a>
+               </figure>
+            </div>
+            <div class="sunflower">
+               <figure>
+                  <picture>
+                     <source
+                        media="(min-width: 550px)"
+                        srcset="img/sunflower-small-1x.jpg 1x, img/sunflower-small-2x.jpg 2x">
+                     <img class ="sunflower-image" src="img/sunflower-medium.jpg" alt="Placeholder for Sunflower">
+                  </picture>
+                  <figcaption class="caption">SUNFLOWER</figcaption>
+                  <a class="zocial-github" href="https://github.com/udacity">Source Code</a>
+               </figure>
+            </div>
+            <div class="bookeh">
+               <figure>
+                  <picture>
+                     <source
+                        media="(min-width: 550px)"
+                        srcset="img/bookeh-small-1x.jpg 1x, img/bookeh-small-2x.jpg 2x">
+                     <img class ="bokeh-image" src="img/bookeh-medium.jpg" alt="Placeholder for Bokeh">
+                  </picture>
+                  <figcaption class="caption">BOKEH</figcaption>
+                  <a class="zocial-github" href="https://github.com/udacity">Source Code</a>
+               </figure>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <h2 class="social-header">Social Links</h2>
+         <div class="facebook">
+            <a class="zocial-facebook" href="https://www.facebook.com/sanju.thomas737">Facebook</a>
+         </div>
+         <div class="twitter">
+            <a class="zocial-twitter" href="https://twitter.com/spanacka">Twitter</a>
+         </div>
+         <div class="instagram">
+            <a class="zocial-instagram" href="https://www.instagram.com/sanjupanackal/">Instagram</a>
+         </div>
+      </footer>
+      <script>
+         /*
+          * Open the drawer when the menu icon is clicked.
+          */
+         var menu = document.querySelector('.header-menu');
+         var main = document.querySelector('main');
+         var drawer = document.querySelector('.nav');
+         
+         menu.addEventListener('click', function(e) {
+           drawer.classList.toggle('open');
+           e.stopPropagation();
+         });
+         main.addEventListener('click', function() {
+           drawer.classList.remove('open');
+         });
+         
+      </script>
+   </body>
+</html>
